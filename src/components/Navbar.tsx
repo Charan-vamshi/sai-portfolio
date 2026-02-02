@@ -14,7 +14,7 @@ export default function Navbar() {
         zIndex: 50,
       }}
     >
-      <h1 style={{ fontWeight: 800 }}>Sai Charan</h1>
+      <h1 style={{ fontWeight: 800 }}>Sai Charan M P</h1>
 
       <div style={{ display: "flex", gap: "20px", color: "#bbb" }}>
         <a href="/">Home</a>
