@@ -14,8 +14,12 @@ export default function Navbar() {
         zIndex: 50,
       }}
     >
-      <h1 style={{ fontWeight: 800 }}>Sai Charan M P</h1>
+      {/* Glitch Name */}
+      <h1 className="glitch" data-text="Sai Charan M P">
+        Sai Charan M P
+      </h1>
 
+      {/* Links */}
       <div style={{ display: "flex", gap: "20px", color: "#bbb" }}>
         <a href="/">Home</a>
         <a href="/about">About</a>
