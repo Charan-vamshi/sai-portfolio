@@ -34,12 +34,12 @@ export default function Home() {
         </div>
 
         {/* RIGHT PHOTO PANEL */}
-        <div className="relative hidden md:block">
+        <div className="relative block mt-10 md:mt-0">
           <div className="glass p-2 rounded-3xl overflow-hidden">
             <img
               src="/images/hero.png"
               alt="Sai Charan Portrait"
-              className="rounded-3xl object-cover object-top w-full h-[520px]"
+              className="rounded-3xl object-cover object-top w-full h-[320px] md:h-[520px]"
             />
           </div>
 
