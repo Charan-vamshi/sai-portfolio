@@ -1,22 +1,12 @@
 export default function Home() {
   return (
-    <section
-      style={{
-        height: "90vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-        textAlign: "center",
-      }}
-    >
-      <h1 className="glitch" data-text="AI Engineer">
+    <section className="h-[90vh] flex flex-col items-center justify-center text-center">
+      <h1 className="glitch text-6xl" data-text="AI Engineer">
         AI Engineer
       </h1>
 
-      <p style={{ marginTop: "20px", color: "#aaa", maxWidth: "600px" }}>
-        Building secure AI systems, futuristic web apps, and field-force
-        integrity platforms.
+      <p className="mt-6 text-white/60 max-w-xl">
+        Building secure AI systems, futuristic web apps, and integrity platforms.
       </p>
     </section>
   );
