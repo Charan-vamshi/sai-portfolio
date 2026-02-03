@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import PageTransition from "../components/PageTransition";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Sai Charan | AI Engineer",
@@ -19,6 +20,7 @@ export default function RootLayout({
 
         <main className="pt-28 px-6">
           <PageTransition>{children}</PageTransition>
+          <Footer />
         </main>
       </body>
     </html>
