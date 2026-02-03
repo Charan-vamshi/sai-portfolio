@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import PageTransition from "../components/PageTransition";
 
 export const metadata = {
   title: "Sai Charan | AI Engineer",
-  description: "Dark futuristic portfolio with 3D robot background",
+  description: "Dark futuristic AI portfolio",
 };
 
 export default function RootLayout({
@@ -15,7 +16,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main style={{ paddingTop: "90px" }}>{children}</main>
+
+        <main className="pt-28 px-6">
+          <PageTransition>{children}</PageTransition>
+        </main>
       </body>
     </html>
   );
