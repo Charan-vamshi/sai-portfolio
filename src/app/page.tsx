@@ -3,42 +3,54 @@ import GlassCard from "../components/GlassCard";
 export default function Home() {
   return (
     <main className="px-10 pt-32 max-w-6xl mx-auto">
-      {/* HERO */}
-      <section className="text-center">
-        <h1
-          className="glitch text-6xl md:text-7xl"
-          data-text="AI Engineer"
-        >
-          AI Engineer
-        </h1>
+      {/* HERO + PHOTO */}
+      <section className="grid md:grid-cols-2 items-center gap-12">
+        {/* LEFT TEXT */}
+        <div>
+          <h1 className="glitch text-6xl md:text-7xl" data-text="AI Engineer">
+            AI Engineer
+          </h1>
 
-        <p className="mt-6 text-white/60 max-w-2xl mx-auto text-lg">
-          I build secure AI systems, enterprise integrity platforms, and
-          futuristic full-stack applications.
-        </p>
+          <p className="mt-6 text-white/60 text-lg max-w-xl">
+            I build secure AI systems, enterprise integrity platforms, and
+            futuristic full-stack applications.
+          </p>
 
-        <div className="mt-10 flex justify-center gap-6">
-          <a
-            href="/projects"
-            className="px-6 py-3 rounded-xl bg-white text-black font-semibold"
-          >
-            View Projects
-          </a>
+          <div className="mt-10 flex gap-6">
+            <a
+              href="/projects"
+              className="px-6 py-3 rounded-xl bg-white text-black font-semibold"
+            >
+              View Projects
+            </a>
 
-          <a
-            href="/contact"
-            className="px-6 py-3 rounded-xl border border-white/20 text-white/70 hover:text-white"
-          >
-            Contact Me
-          </a>
+            <a
+              href="/contact"
+              className="px-6 py-3 rounded-xl border border-white/20 text-white/70 hover:text-white"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        {/* RIGHT PHOTO PANEL */}
+        <div className="relative hidden md:block">
+          <div className="glass p-2 rounded-3xl overflow-hidden">
+            <img
+              src="/images/hero.png"
+              alt="Sai Charan Portrait"
+              className="rounded-3xl object-cover object-top w-full h-[520px]"
+            />
+          </div>
+
+          {/* Fade overlay */}
+          <div className="absolute inset-y-0 left-0 w-1/3 rounded-l-3xl bg-gradient-to-r from-black via-black/40 to-transparent"></div>
         </div>
       </section>
 
       {/* FEATURED PROJECT */}
       <section className="mt-24">
-        <h2 className="text-3xl font-semibold mb-6">
-          Flagship Project
-        </h2>
+        <h2 className="text-3xl font-semibold mb-6">Flagship Project</h2>
 
         <GlassCard>
           <h3 className="text-xl font-bold">
